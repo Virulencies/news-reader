@@ -4,7 +4,7 @@ import './App.css';
 import ArticleList from './components/ArticleList';
 import ArticleDetail from './components/ArticleDetail';
 import SearchBar from './components/SearchBar';
-import { mockArticles } from './mockData'; // Assuming mock data is used for initial state
+import { mockArticles } from './mockData';
 
 function App() {
   const [articles, setArticles] = useState(mockArticles);
