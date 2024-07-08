@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ArticleList = ({ articles, onSelect }) => {
+const ArticleList = ({ articles }) => {
   return (
     <div className="article-list">
       {articles.map((article, index) => (
-        <div key={index} className="article" onClick={() => onSelect(article)}>
+        <div key={index} className="article">
           <img src={article.urlToImage} alt={article.title} />
           <h3>{article.title}</h3>
           <p>{article.description}</p>
           <p>Published At: {new Date(article.publishedAt).toLocaleDateString()}</p>
-          <a href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
+          <Link to={`/article/${encodeURIComponent(article.url)}`}>Read more</Link>
         </div>
       ))}
     </div>

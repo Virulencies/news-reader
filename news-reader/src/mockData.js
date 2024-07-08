@@ -1,5 +1,6 @@
 export const mockArticles = [
     {
+      id: 1,
       source: { id: null, name: "Theregister.com" },
       author: "Tobias Mann",
       title: "A friendly guide to local AI image gen with Stable Diffusion and Automatic1111",
@@ -10,6 +11,7 @@ export const mockArticles = [
       content: "Hands On The launch of Microsoft's Copilot+ AI PCs...",
     },
     {
+      id: 2,
       source: { id: null, name: "AnotherSource.com" },
       author: "Jane Doe",
       title: "Another Article Title",

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
 import './App.css';
 import ArticleList from './components/ArticleList';
 import ArticleDetail from './components/ArticleDetail';
 import SearchBar from './components/SearchBar';
+import { mockArticles } from './mockData'; // Assuming mock data is used for initial state
 
 function App() {
-  const [articles, setArticles] = useState([]);
-  const [selectedArticle, setSelectedArticle] = useState(null);
+  const [articles, setArticles] = useState(mockArticles);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -33,25 +34,28 @@ function App() {
       article.title.toLowerCase().includes(query.toLowerCase())
     );
     setArticles(filteredArticles);
-    setSelectedArticle(null);
-  };
-
-  const handleSelectArticle = (article) => {
-    setSelectedArticle(article);
   };
 
   return (
-    <div>
-      <h1>News Reader</h1>
-      <SearchBar onSearch={handleSearch} />
-      {error && <p>Error: {error}</p>}
-      {selectedArticle ? (
-        <ArticleDetail article={selectedArticle} />
-      ) : (
-        <ArticleList articles={articles} onSelect={handleSelectArticle} />
-      )}
-    </div>
+    <Router>
+      <div>
+        <h1>News Reader</h1>
+        <SearchBar onSearch={handleSearch} />
+        {error && <p>Error: {error}</p>}
+        <Routes>
+          <Route path="/" element={<ArticleList articles={articles} />} />
+          <Route path="/article/:url" element={<ArticleDetailWrapper articles={articles} />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
+
+const ArticleDetailWrapper = ({ articles }) => {
+  const { url } = useParams();
+  const decodedUrl = decodeURIComponent(url);
+  const article = articles.find((article) => article.url === decodedUrl);
+  return <ArticleDetail article={article} />;
+};
 
 export default App;
