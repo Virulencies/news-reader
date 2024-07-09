@@ -1,5 +1,12 @@
 # News Reader App
 
+## Technologies Used
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat-square)
+![React Router](https://img.shields.io/badge/-React%20Router-CA4245?logo=react-router&logoColor=white&style=flat-square)
+![Fetch API](https://img.shields.io/badge/-Fetch%20API-333333?logo=javascript&logoColor=white&style=flat-square)
+![Flexbox](https://img.shields.io/badge/-Flexbox-1572B6?logo=css3&logoColor=white&style=flat-square)
+![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white&style=flat-square)
+
 ## Description
 
 The News Reader App is a responsive web application built with React that fetches and displays news articles from the News API. It allows users to view a list of articles, search for specific articles, and view detailed information about each article.
@@ -10,14 +17,6 @@ The News Reader App is a responsive web application built with React that fetche
 - **Search Functionality**: Allows users to filter articles based on keywords.
 - **Detailed Article View**: Clicking on an article opens a detailed view with the full content, source, and additional information.
 - **Routing**: Utilizes React Router for navigation between the article list and detailed views, enabling users to use the browser's back button and direct links.
-
-## Technologies Used
-
-- **React**: For building the user interface.
-- **React Router**: For handling navigation and routing.
-- **Fetch API**: For making HTTP requests to the News API.
-- **Flexbox**: For creating a responsive layout.
-- **CSS**: For styling the application.
 
 ## Installation
 
