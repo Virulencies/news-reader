@@ -9,7 +9,7 @@
 
 ## Description
 
-The News Reader App is a responsive web application built with React that fetches and displays news articles from the News API. It allows users to view a list of articles, search for specific articles, and view detailed information about each article.
+As a take-home chalenge, I was given 8 hours to develop a responsive news reader web application built with React that fetches and displays news articles from a News API. It allows users to view a list of articles, search for specific articles, and view detailed information about each article.
 
 ## Features
 
@@ -37,4 +37,4 @@ Follow these steps to set up and run the project locally:
    ```sh
    npm start
    
-   
+Once running, simply click any article or search for anything that piques your interest!
