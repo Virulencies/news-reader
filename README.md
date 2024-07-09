@@ -1,66 +1,29 @@
-# Getting Started with Create React App
+# News Reader App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+The News Reader App is a responsive web application built with React that fetches and displays news articles from the News API. It allows users to view a list of articles, search for specific articles, and view detailed information about each article.
 
-In the project directory, you can run:
+## Features
 
-### `npm i`
+- **Article List**: Displays a list of news articles with headlines, images, descriptions, and publication dates.
+- **Search Functionality**: Allows users to filter articles based on keywords.
+- **Detailed Article View**: Clicking on an article opens a detailed view with the full content, source, and additional information.
+- **Routing**: Utilizes React Router for navigation between the article list and detailed views, enabling users to use the browser's back button and direct links.
 
-Installs all the dependancies for the project.
+## Technologies Used
 
-### `npm start`
+- **React**: For building the user interface.
+- **React Router**: For handling navigation and routing.
+- **Fetch API**: For making HTTP requests to the News API.
+- **Flexbox**: For creating a responsive layout.
+- **CSS**: For styling the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Follow these steps to set up and run the project locally:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/yourusername/news-reader.git
+   cd news-reader
